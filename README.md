@@ -65,16 +65,22 @@ The dataset was modeled using a Star Schema to optimize performance and scalabil
 <img width="580" height="291" alt="Pizza Sales Model" src="https://github.com/user-attachments/assets/229d55d8-fce5-4e70-8204-b5dbe162039a" />
 
 ## Key DAX Function Created
+```
 1.  Total Revenue: This calculates total business income by aggregating transactional sales.
 DAX: SUMX (order_details, order_details[quantity] * RELATED (pizzas[price]))
+
 2.  Total Orders: This gives the total value of orders made taking into consideration individual unique orders.
 DAX: DISTINCTCOUNT (orders[order_id])
+
 3.  Average Order Value (AOV): This gives the average amount customers spend per pizza purchase/transaction.
 DAX: DIVIDE ([total_revenue], [total_orders],0)
+
 4.  Total Pizza Sold: This gives the overall count of pizza sold within a given period.
 DAX: SUM (order_details[quantity])
+
 5.  Peak Period Pizza: This shows the number of pizzas sold during peak hours.
-DAX: CALCULATE ([total_pizza_sold], 'orders'[order_hours] IN {12,13,17,18}) 
+DAX: CALCULATE ([total_pizza_sold], 'orders'[order_hours] IN {12,13,17,18})
+```
 ## Analysis and Insights
 ## Busiest Times and Days
 1.	The store experiences clear lunch (12:00noon – 13:00pm) and dinner (17:00pm – 18:00pm) rush periods with the highest orders recorded on Friday (over 3,500), followed by Thursday (over 3,200) and Saturday (over 3,150).
@@ -113,6 +119,8 @@ The dashboard was designed as a centralized operational monitoring tool featurin
 3.	Best/Worst selling pizza performance charts.
 4.	Seat utilization gauge.
 5.	Total pizza made by size.
+## Conclusion
+This analysis successfully transformed raw transactional data into actionable operational insights using Power BI. The findings reveal clear peak demand periods, product performance disparities, and opportunities to improve seating utilization and customer spending behaviour.  By optimizing staffing levels with demand, optimizing menu and implementing upselling strategies, management can improve operational efficiency, increase revenue performance, and enhance customer experience.
 ## How to Reproduce this Project
 1.	Download the dataset from the /data folder.
 2.	Open the .pbix file in Power BI Desktop.
