@@ -54,12 +54,12 @@ The following steps were performed:
 ## Data Modelling
 The dataset was modeled using a Star Schema to optimize performance and scalability.
 ## Fact Table
-•  order_details table.
+1.	order_details table.
 ## Dimension Tables
-•  orders table
-•  pizza_types table
-•  pizzas table and, 
-•  date_table.
+1.	orders table
+2.	pizza_types table
+3.	pizzas table and,
+4.	date_table.
 
 ## Relationship
 <img width="580" height="291" alt="Pizza Sales Model" src="https://github.com/user-attachments/assets/229d55d8-fce5-4e70-8204-b5dbe162039a" />
@@ -77,42 +77,42 @@ DAX: SUM (order_details[quantity])
 DAX: CALCULATE ([total_pizza_sold], 'orders'[order_hours] IN {12,13,17,18}) 
 ## Analysis and Insights
 ## Busiest Times and Days
-•  The store experiences clear lunch (12:00noon – 13:00pm) and dinner (17:00pm – 18:00pm) rush periods with the highest orders recorded on Friday (over 3,500), followed by Thursday (over 3,200) and Saturday (over 3,150).
-•  This indicates that customers purchase pizzas as a full meal rather than as snacks to be eaten and mostly during the weekends.
-•  Pizzas sold during peak hours contribute over 40% of daily revenue. Increasing the numbers of staff during peak hours could reduce customer wait time and increase the number of pizzas ordered.
+1.	The store experiences clear lunch (12:00noon – 13:00pm) and dinner (17:00pm – 18:00pm) rush periods with the highest orders recorded on Friday (over 3,500), followed by Thursday (over 3,200) and Saturday (over 3,150).
+2.	This indicates that customers purchase pizzas as a full meal rather than as snacks to be eaten and mostly during the weekends.
+3.	Pizzas sold during peak hours contribute over 40% of daily revenue. Increasing the numbers of staff during peak hours could reduce customer wait time and increase the number of pizzas ordered.
 
 ## Product Performance Analysis
-•  Total pizza sold during peak hours (highest selling hours) were 24,000 pieces, which represent 48% of pizzas made and were concentrated within four (4) peak hours.
-•  The best-selling pizzas were the “Classic Deluxe, Barbecue Chicken, Hawaiian, Pepperoni, and Thai Chicken pizzas”.
-•  The worst-selling pizzas were the “Soppressata, Spinach Supreme, Calabrese, Mediterranean, and Brie Carre pizzas”. 
-•  Top 5 pizzas generate around 24.19% of total sales while the bottom 5 pizzas only contributed a mere 8.54% of the total sales.
-•  The Bottom-performing pizzas exhibit low turnover and may increase inventory waste.
+1.	Total pizza sold during peak hours (highest selling hours) were 24,000 pieces, which represent 48% of pizzas made and were concentrated within four (4) peak hours.
+2.	The best-selling pizzas were the “Classic Deluxe, Barbecue Chicken, Hawaiian, Pepperoni, and Thai Chicken pizzas”.
+3.	The worst-selling pizzas were the “Soppressata, Spinach Supreme, Calabrese, Mediterranean, and Brie Carre pizzas”.
+4.	Top 5 pizzas generate around 24.19% of total sales while the bottom 5 pizzas only contributed a mere 8.54% of the total sales.
+5.	The Bottom-performing pizzas exhibit low turnover and may increase inventory waste.
 ## Revenue and Customer Spending Behaviour
-•  The total sales reveals that a small number of pizzas produce majority of total revenue, and weekend sales significantly outperforms weekdays.
-•  Average Order Value (AOV) reveals customer spending habits. Customers typically purchase two to three pizzas per order. Introducing combo deals and upsell strategies of pizzas on order can increase the AOV without inflating the price.
-•  The analysis of the total pizza by size shows that large pizza had the most sales. This allows the restaurant to understand customer preference and spending behaviour, and identifies the most profitable pizza size. This helps in guiding pricing strategy, promotion, and operational planning.
+1.	The total sales reveals that a small number of pizzas produce majority of total revenue, and weekend sales significantly outperforms weekdays.
+2.	Average Order Value (AOV) reveals customer spending habits. Customers typically purchase two to three pizzas per order. Introducing combo deals and upsell strategies of pizzas on order can increase the AOV without inflating the price.
+3.	The analysis of the total pizza by size shows that large pizza had the most sales. This allows the restaurant to understand customer preference and spending behaviour, and identifies the most profitable pizza size. This helps in guiding pricing strategy, promotion, and operational planning.
 ## Seating Utilization
-•  Seat utilization reaches 85 - 95% during lunch and dinner rush, but 7 - 30% in the morning. This indicates that the seating capacity is well utilized during the afternoon and evening sales and underutilized during morning sales.
+1.	Seat utilization reaches 85 - 95% during lunch and dinner rush, but 7 - 30% in the morning. This indicates that the seating capacity is well utilized during the afternoon and evening sales and underutilized during morning sales.
 ## Business Recommendations
-•  Increase staffing during peak hours, this will help to cushion the effect of staff burnout and increase staff productivity and efficiency.
-•  Promote weekday lunch deals, and introduce pizza discounts to improve sales and seat utilization on weekdays.
-•  Remove or bundle consistently underperforming pizzas. This will help regulate costs or reduce losses.
-•  Implement upselling strategies to increase AOV. This can be done by adjusting prices for high-volume but low-profit pizzas and promote high-profit low-demand pizzas.
-•  Seat utilization trends should be monitored for expansion decisions.
+1.	Increase staffing during peak hours, this will help to cushion the effect of staff burnout and increase staff productivity and efficiency.
+2.	Promote weekday lunch deals, and introduce pizza discounts to improve sales and seat utilization on weekdays.
+3.	Remove or bundle consistently underperforming pizzas. This will help regulate costs or reduce losses.
+4.	Implement upselling strategies to increase AOV. This can be done by adjusting prices for high-volume but low-profit pizzas and promote high-profit low-demand pizzas.
+5.	Seat utilization trends should be monitored for expansion decisions.
 ## Business Impact
-This analysis enables management to:
-•  Optimize staffing especially during lunch and dinner hours is expected to reduce waiting time by 20% and increase daily revenues.
-•  Upselling strategies will increase profitability of the store.
-•  Optimize staffing, removing or bundling of consistently underperforming pizzas from the menu will also improve operational efficiency.
-•  Removing or bundling consistently underperforming pizzas will reduce ingredient waste and increase inventory turnover.
-•  Optimizing seating capacity, upselling strategies, and increase number of staff especially during peak hours will enhance customer experience.
+The analysis enables management to:
+1.	Optimize staffing especially during lunch and dinner hours is expected to reduce waiting time by 20% and increase daily revenues.
+2.	Upselling strategies will increase profitability of the store.
+3.	Optimize staffing, removing or bundling of consistently underperforming pizzas from the menu will also improve operational efficiency.
+4.	Removing or bundling consistently underperforming pizzas will reduce ingredient waste and increase inventory turnover.
+5.	Optimizing seating capacity, upselling strategies, and increase number of staff especially during peak hours will enhance customer experience.
 ## Dashboard Features / Functionality
 The dashboard was designed as a centralized operational monitoring tool featuring:
-•  KPI summary cards.
-•  Busiest times and days.
-•  Best/Worst selling pizza performance charts.
-•  Seat utilization gauge.
-•  Total pizza made by size.
+1.	KPI summary cards.
+2.	Busiest times and days.
+3.	Best/Worst selling pizza performance charts.
+4.	Seat utilization gauge.
+5.	Total pizza made by size.
 ## How to Reproduce this Project
 1.	Download the dataset from the /data folder.
 2.	Open the .pbix file in Power BI Desktop.
@@ -126,7 +126,7 @@ The dashboard was designed as a centralized operational monitoring tool featurin
 
 
 
-Author
+## Author
 Disi, Ogheneochuko Fredrick
+
 Data Analyst | Business Intelligence Enthusiast
-Power BI • Data Modeling • DAX • Visualization
